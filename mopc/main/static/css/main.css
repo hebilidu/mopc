@@ -1,0 +1,134 @@
+.button {
+    border: 3px solid green;
+    border-radius: 1em;
+    color: white;
+    background-color: green;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin: .3em;
+    padding: -2em;
+    cursor: pointer;
+}
+
+.main-hogwarts {
+    padding: 1em;
+    height: 90vh;
+    background-color: black;
+    background-image: url("../img/hogwarts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow-y: scroll;
+}
+
+.main-logo {
+    padding: 1em;
+    height: 90vh;
+    background-color: black;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    opacity: .9;
+}
+
+.cont-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 5px;
+    border-radius: 1em
+}
+
+.cont-left {
+    display: flex;
+    flex-direction: column; 
+}
+
+.cont-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: .9;
+}
+
+.menutop {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 9rem;
+    height: 11rem; 
+    overflow: hidden;
+    opacity:.9;
+    border: none;
+}
+
+.card-large {
+    width: 20rem;
+    height: 26rem; 
+    overflow: hidden;
+    opacity:.9;
+    border: none;
+    opacity: 1;
+}
+
+.Gryffindor {
+    border: red solid 5px;
+}
+
+.Hufflepuff {
+    border: yellow solid 5px; 
+}
+
+.Ravenclaw {
+    border: blue solid 5px;
+}
+
+.Slytherin {
+    border: green solid 5px;;
+}
+
+.card-img-top {
+    height: 100%;
+}
+
+.box {
+    background-color: rgb(51, 75, 95);
+    border-radius: 1em;
+    opacity: .9;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.info{
+    margin-left: 1em;
+}
+
+table {
+    background-color: darkslateblue;
+    opacity: .8;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+td {
+    padding: 1px;
+}
