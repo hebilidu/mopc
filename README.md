@@ -17,6 +17,6 @@ On top of this general definition, note that clouds may be owned by corporations
 - [ ] Fill README.md page (project brief)
 - [ ] Issue a prototype of the project home page
 - [ ] Lists functionalities and applications to add to project
-- [ ] Priorize above list and define scope to fit a two weeks window
+- [ ] Priorize above list, define scope to fit a two weeks window, plan
 - [ ] Select technical platform(s)
 - [ ] Code
