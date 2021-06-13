@@ -6,7 +6,7 @@ I want to help address this issue by creating a platform hosting your personal d
 ## What is cloud computing ?
 According to NIST,
 >Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources–e.g., networks, servers, storage, applications, and services–that can be rapidly provisioned and released with minimal management effort or service provider interaction.”
-If you find this definition intimidating, just retain that a cloud is a space that hosts data and applications (e.g. your photos and an application managing them into albums and allowing selected people to access these albums).
+>If you find this definition intimidating, just retain that a cloud is a space that hosts data and applications (e.g. your photos and an application managing them into albums and allowing selected people to access these albums).
 On top of this general definition, note that clouds may be owned by corporations or other individuals. But most interstingly, they can be privately-owned, meaning owned by yourself, even though they might actually be hosted on an equipment that is not yours (this is called a _virtual private cloud_).
 ## How is this project structured ?
 * The administration
