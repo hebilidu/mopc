@@ -1,35 +1,69 @@
+* {
+    background-color: #0d6efd;
+}
+
 .button {
-    border: 3px solid green;
+    border: 3px solid blue;
     border-radius: 1em;
     color: white;
-    background-color: green;
+    background-color: blue;
     text-align: center;
     text-decoration: none;
     font-size: 0.8em;
-    margin: .3em;
     padding: -2em;
     cursor: pointer;
 }
 
-.main-hogwarts {
+.main {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+}
+
+.left,
+.right {
+    background-color: rgba(51,133,217,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left{align-items: flex-end;}
+
+.right{align-items: flex-start;}
+
+.main-mopc {
     padding: 1em;
-    height: 90vh;
-    background-color: black;
-    background-image: url("../img/hogwarts.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 88vh;
+    background-color: rgba(51,133,217,255);
     color: white;
     overflow-y: scroll;
 }
 
 .main-logo {
     padding: 1em;
-    height: 90vh;
-    background-color: black;
+    height: 88vh;
+    background-color: rgba(51,133,217,255);
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tile {
+    width: 6em;
+    height: 6em; 
+    overflow: hidden;
+    background-color: rgba(51,133,217,255);
+    color: white;
+    border: blue solid 5px;
+    border-radius: 1em;
+    margin-left: .4em;
+    margin-right: .4em;
 }
 
 .cont {
@@ -49,12 +83,14 @@
     border-radius: 1em
 }
 
-.cont-left {
+.cont-col {
+    background-color: rgba(51,133,217,255);
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .cont-row {
+    background-color: rgba(51,133,217,255);
     display: flex;
     flex-direction: row;
 }
@@ -64,71 +100,4 @@
     flex-wrap: wrap;
     justify-content: center;
     opacity: .9;
-}
-
-.menutop {
-    display: flex;
-    flex-direction: column;
-}
-
-.card {
-    width: 9rem;
-    height: 11rem; 
-    overflow: hidden;
-    opacity:.9;
-    border: none;
-}
-
-.card-large {
-    width: 20rem;
-    height: 26rem; 
-    overflow: hidden;
-    opacity:.9;
-    border: none;
-    opacity: 1;
-}
-
-.Gryffindor {
-    border: red solid 5px;
-}
-
-.Hufflepuff {
-    border: yellow solid 5px; 
-}
-
-.Ravenclaw {
-    border: blue solid 5px;
-}
-
-.Slytherin {
-    border: green solid 5px;;
-}
-
-.card-img-top {
-    height: 100%;
-}
-
-.box {
-    background-color: rgb(51, 75, 95);
-    border-radius: 1em;
-    opacity: .9;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-}
-
-.info{
-    margin-left: 1em;
-}
-
-table {
-    background-color: darkslateblue;
-    opacity: .8;
-    border-radius: 1em;
-    margin: 1em;
-}
-
-td {
-    padding: 1px;
 }

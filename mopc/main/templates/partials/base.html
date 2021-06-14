@@ -7,10 +7,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title%}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
-    {% bootstrap_css %} 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    {% bootstrap_css %} 
     {% block css %}
     {% endblock %}
 </head>
@@ -27,6 +28,7 @@
     {% bootstrap_javascript %}    
     {% block js %}
     {% endblock %}
+    <div class="fixed-bottom bg-primary text-center">© 2021 Liên Duong - All rights reserved</div>
     <script src="{% static 'js/main.js' %}"></script>
 
 </body>
