@@ -14,11 +14,9 @@ body{
 	min-height: 100vh;
 }
 
-
 a{
 	text-decoration: none;
 }
-
 
 .hero{
 	color: white;
@@ -35,7 +33,6 @@ a{
 .contact-info{
 	padding: 1.5em;
 }
-
 
 .hero-info{
 	display: flex;

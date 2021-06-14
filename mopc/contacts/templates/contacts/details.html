@@ -13,7 +13,6 @@
 	<title>Contact Details</title>
 </head>
 <body>
-
 	<div class="container">
 		<header class="hero">
 			<a href="{% url 'index' %}">
@@ -24,44 +23,32 @@
 				<p  class="relationship">{{ contact.relationship | title }}</p>
 			</div>
 		</header>
-
 		<section class="contact-info">
-
 			<div class="info-line">
 				<i class="fas fa-phone icon-gradient"></i>
 				<p class="phone-number">{{ contact.phone_number }}</p>
 			</div>
-
-		
-
 			<!-- <div class="info-line">
 				<i class="fas fa-sms icon-gradient"></i>
 				<p class="sms">Send Message</p>
 			</div> -->
-
-			
-
 			<div class="info-line">
 				<i class="fas fa-envelope icon-gradient"></i>
 				<p class="email">{{ contact.email }}</p>
 			</div>
-
-			
-
 			<div class="info-line">
 				<i id="location" class="fas fa-map-marker-alt icon-gradient"></i>
 				<p class="address">{{ contact.address }}</p>
 			</div>
 		</section>
-
-		<a href="edit.html">
-			<section class="edit-contact">
-				<div class="edit-button">
-					<i class="fas fa-cog icon-gradient"></i>
-				</div>
-			</section>
-		</a>
+		<section class="button-container">
+			<div class="edit-button">
+				<a href="{% url 'edit_contact' contact.id %}">
+				<i class="fas fa-cog icon-gradient"></i>
+				<button class="button">Edit</button>
+				</a>
+			</div>
+		</section>
 	</div>
-
 </body>
 </html>
