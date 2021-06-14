@@ -22,5 +22,6 @@ On top of this general definition, note that clouds may be owned by corporations
 - [ ] Code
 
 ## Modules and packages used in this project
-* https://python-social-auth.readthedocs.io/en/latest/index.html
+* Login with social network id: https://python-social-auth.readthedocs.io/en/latest/index.html
 * Address Book: https://github.com/asrashley/django-addressbook
+* iCalendar abd vCard files: https://eventable.github.io/vobject/

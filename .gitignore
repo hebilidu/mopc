@@ -1,6 +1,9 @@
 # MAC OS X #
 .DS_Store
 
+# Github #
+*-master
+
 # Django #
 *.log
 *.pot
