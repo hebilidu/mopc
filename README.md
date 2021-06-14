@@ -20,3 +20,6 @@ On top of this general definition, note that clouds may be owned by corporations
 - [ ] Priorize above list, define scope to fit a two weeks window, plan
 - [ ] Select technical platform(s)
 - [ ] Code
+
+## Modules and packages used in this project
+* https://python-social-auth.readthedocs.io/en/latest/index.html
