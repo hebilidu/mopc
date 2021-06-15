@@ -11,9 +11,9 @@ If you find this definition intimidating, just retain that a cloud is a space th
 On top of this general definition, note that clouds may be owned by corporations or other individuals. But most interstingly, they can be privately-owned, meaning owned by yourself, even though they might actually be hosted on an equipment that is not yours (this is called a _virtual private cloud_).
 ## How is this project structured ? What will it really look like ?
 1. The administration
-1. The applications
 Main Home Page:
 ![Main Home Page](/mopc/main/static/img/Screenshot_main_homepage.png "Main Home Page")
+1. The applications
 Contact List:
 ![Contact List](/mopc/main/static/img/Screenshot_contact_list.png "Contact List")
 
