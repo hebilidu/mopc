@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('social_django.urls', namespace='social')),
     path('contacts/', include('contacts.urls')),
+    path('photologue/', include('photologue.urls', namespace='photologue')),
 ]
 
 if settings.DEBUG:

@@ -1,5 +1,0 @@
-alias mak='python manage.py makemigrations'
-alias mig='python manage.py migrate'
-alias ru='python manage.py runserver'
-alias act='source ../venv/bin/activate'
-alias dea='deactivate'

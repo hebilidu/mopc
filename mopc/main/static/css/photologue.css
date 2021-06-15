@@ -1,0 +1,11 @@
+.photologue {
+    padding: 1em;
+    height: 88vh;
+    overflow-y: scroll;
+}
+
+.thumbnail {
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid grey;
+}
