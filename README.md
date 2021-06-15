@@ -23,7 +23,8 @@ On top of this general definition, note that clouds may be owned by corporations
 - [x] Lists functionalities and applications to add to project - Day51
 - [ ] Priorize above list, define scope to fit a two weeks window, plan - Day51
 - [ ] Select technical platform(s) - Day51
-- [ ] Set up django social authentication - Day52
+- [ ] Set up Django social authentication - Day52
+- [ ] Set up Django multi-tenancy - Day55
 - [x] Set up address book app - Day52
 - [ ] Set up notes app - Day54
 - [ ] Set up blog app - Day54
