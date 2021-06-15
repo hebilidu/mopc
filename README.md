@@ -37,3 +37,8 @@ On top of this general definition, note that clouds may be owned by corporations
 * iCalendar abd vCard files: https://eventable.github.io/vobject/
 * bootstrap5
 * https://fontawesome.com/
+
+## Subjects to further explore
+* Set up server to run interactive Python apps
+* Django social apps authentication
+* Multi-tenancy in Django
