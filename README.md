@@ -35,3 +35,5 @@ On top of this general definition, note that clouds may be owned by corporations
 * Login with social network id: https://python-social-auth.readthedocs.io/en/latest/index.html
 * Address Book: https://github.com/tomitokko/contacts-list
 * iCalendar abd vCard files: https://eventable.github.io/vobject/
+* bootstrap5
+* https://fontawesome.com/
