@@ -12,6 +12,8 @@ On top of this general definition, note that clouds may be owned by corporations
 ## How is this project structured ? What will it really look like ?
 1. The administration
 1. The applications
+![Main Home Page](/mopc/main/img/Screenshot_main_homepage.png "Main Home Page"){: width=150 height=100 style="float:right; padding:16px"}
+![Contact List](/mopc/main/img/Screenshot_contact_list.png "Contact List"){: width=150 height=100 style="float:right; padding:16px"}
 
 ## TASKS LIST
 - [x] Fill README.md page (project brief) - Day51
@@ -40,5 +42,5 @@ On top of this general definition, note that clouds may be owned by corporations
 
 ## Subjects to further explore
 * Set up server to run interactive Python apps
-* Django social apps authentication
+* Django social networks authentication
 * Multi-tenancy in Django
