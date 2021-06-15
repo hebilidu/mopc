@@ -2,7 +2,7 @@
 ## Are you concerned with who has rights over your personal data ? Well you should be.
 All the personal data that one posts onto the web constitutes one's digital self. In the physical world, unless you are a public figure, personal data are deemed private and as belonging to you. In the digital world, not so much. For instance, it may depend on where they are actually stored (the bridge with the physical world is the storage and communication hardware that belong to corporations or other individuals). If others than yourself have right over your personal data, they might use them not in your best interests.
 ## Why this project ?
-I want to help address this issue by creating a platform hosting your personal data that would totally be under your control, while keeping all the nice features that new technologies have brought to us (mainly the ability to share things).  
+I want to help address this issue by creating a platform hosting your personal data that would totally be under your control, while keeping all the nice features that new technologies have brought to us (mainly the ability to share things), in a secured and userfriendly environment (that's the trickiest part).  
 ## What is cloud computing ?
 According to NIST,
 >Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources–e.g., networks, servers, storage, applications, and services–that can be rapidly provisioned and released with minimal management effort or service provider interaction.
@@ -42,6 +42,7 @@ On top of this general definition, note that clouds may be owned by corporations
 * iCalendar abd vCard files: https://eventable.github.io/vobject/
 * bootstrap5
 * https://fontawesome.com/
+* Photo gallery: https://github.com/richardbarran/django-photologue
 
 ## Subjects to further explore
 * Set up server to run interactive Python apps
