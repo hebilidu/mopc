@@ -10,10 +10,10 @@ According to NIST,
 If you find this definition intimidating, just retain that a cloud is a space that hosts data and applications (e.g. your photos and an application managing them into albums and allowing selected people to access these albums).
 On top of this general definition, note that clouds may be owned by corporations or other individuals. But most interstingly, they can be privately-owned, meaning owned by yourself, even though they might actually be hosted on an equipment that is not yours (this is called a _virtual private cloud_).
 ## How is this project structured ? What will it really look like ?
-1. The administration
+1. The administration<br>
 Main Home Page:
 ![Main Home Page](/mopc/main/static/img/Screenshot_main_homepage.png "Main Home Page")
-1. The applications
+1. The applications<br>
 Contact List:
 ![Contact List](/mopc/main/static/img/Screenshot_contact_list.png "Contact List")
 
