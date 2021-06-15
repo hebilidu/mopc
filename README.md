@@ -30,7 +30,7 @@ On top of this general definition, note that clouds may be owned by corporations
 - [x] Set up address book app - Day52
 - [ ] Set up notes app - Day54
 - [ ] Set up blog app - Day54
-- [ ] Set up photo album app - Day 53
+- [x] Set up photo album app - Day 53
 - [ ] Set up file storage and sharing service - Day55
 - [ ] Set up genealogy app
 - [ ] Set up news aggregator app
