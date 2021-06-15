@@ -14,14 +14,24 @@ On top of this general definition, note that clouds may be owned by corporations
 1. The applications
 
 ## TASKS LIST
-- [ ] Fill README.md page (project brief)
-- [ ] Issue a prototype of the project home page
-- [ ] Lists functionalities and applications to add to project
-- [ ] Priorize above list, define scope to fit a two weeks window, plan
-- [ ] Select technical platform(s)
-- [ ] Code
+- [x] Fill README.md page (project brief) - Day51
+- [x] Issue a prototype of the project home page - Day52
+- [x] Lists functionalities and applications to add to project - Day51
+- [ ] Priorize above list, define scope to fit a two weeks window, plan - Day51
+- [ ] Select technical platform(s) - Day51
+- [ ] Set up django social authentication - Day52
+- [x] Set up address book app - Day52
+- [ ] Set up notes app - Day54
+- [ ] Set up blog app - Day54
+- [ ] Set up photo album app - Day 53
+- [ ] Set up file storage and sharing service - Day55
+- [ ] Set up genealogy app
+- [ ] Set up news aggregator app
+- [ ] Set up professional section (CV, portfolio) - Day56-57
+- [ ] Set up game section (asteroids interactive game) - Day58-59
+- [ ] Set up server (owned or virtual) - Day58-59
 
-## Modules and packages used in this project
+## Modules, packages and other resources used in this project
 * Login with social network id: https://python-social-auth.readthedocs.io/en/latest/index.html
 * Address Book: https://github.com/tomitokko/contacts-list
 * iCalendar abd vCard files: https://eventable.github.io/vobject/
