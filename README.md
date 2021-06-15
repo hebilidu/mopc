@@ -44,5 +44,7 @@ On top of this general definition, note that clouds may be owned by corporations
 
 ## Subjects to further explore
 * Set up server to run interactive Python apps
-* Django social networks authentication
-* Multi-tenancy in Django
+* Django social networks authentication (-> https://github.com/pennersr/django-allauth)
+    * (see also: https://djangopackages.org/grids/g/facebook-authentication/)
+* Multi-tenancy in Django (-> https://github.com/django-tenants/django-tenants)
+    * (see also: https://djangopackages.org/grids/g/multi-tenancy/)
