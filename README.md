@@ -12,8 +12,10 @@ On top of this general definition, note that clouds may be owned by corporations
 ## How is this project structured ? What will it really look like ?
 1. The administration
 1. The applications
-![Main Home Page](/mopc/main/static/img/Screenshot_main_homepage.png "Main Home Page"){: width=150 height=100 style="float:right; padding:16px"}
-![Contact List](/mopc/main/static/img/Screenshot_contact_list.png "Contact List"){: width=150 height=100 style="float:right; padding:16px"}
+Main Home Page:
+![Main Home Page](/mopc/main/static/img/Screenshot_main_homepage.png "Main Home Page")
+Contact List:
+![Contact List](/mopc/main/static/img/Screenshot_contact_list.png "Contact List")
 
 ## TASKS LIST
 - [x] Fill README.md page (project brief) - Day51
