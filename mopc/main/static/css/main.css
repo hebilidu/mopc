@@ -54,18 +54,6 @@
 
 }
 
-.tile {
-    width: 6em;
-    height: 6em; 
-    overflow: hidden;
-    background-color: rgba(51,133,217,255);
-    color: white;
-    border: blue solid 5px;
-    border-radius: 1em;
-    margin-left: .4em;
-    margin-right: .4em;
-}
-
 .cont {
     display: flex;
     flex-direction: column;
@@ -93,6 +81,55 @@
     background-color: rgba(51,133,217,255);
     display: flex;
     flex-direction: row;
+}
+
+.tile {
+    width: 6em;
+    height: 6em; 
+    overflow: hidden;
+    background-color: rgba(51,133,217,255);
+    color: white;
+    border-radius: 1em;
+    margin-left: .4em;
+    margin-right: .4em;
+}
+
+.pro {
+    border: red solid 5px;
+    text-align: center; 
+    padding-top: 3px;
+}
+
+.leisure {
+    border: blue solid 5px;
+    text-align: center; 
+    padding-top: 3px;
+}
+
+.tech {
+    border: orange solid 5px;
+    text-align: center; 
+    padding-top: 3px;
+}
+
+.org {
+    border: blue solid 5px;
+    text-align: center; 
+    padding-top: 3px;
+}
+
+.undefined {
+    border: grey solid 5px;
+    text-align: center; 
+    padding-top: 3px;
+
+}
+ .active {
+    background-color: white;
+ }
+
+.inactive {
+    background-color: grey;
 }
 
 .cont-wrap {
