@@ -1,0 +1,21 @@
+{%   extends 'partials/blog.html' %}
+
+{% block title %}
+List categories
+{% endblock %}
+
+{% block content %}
+
+<div class="page-title">List categories}</div>
+
+{% for c in categories %}
+<div class="category">
+    <h1>{{ c.label }} | slug = {{ c.slug }}</h1>
+</div>
+{% endfor %}
+
+<a href="{% url 'blog' %}">
+    <button type="button" class="btn btn-primary btn-sm">Back to list of posts</button>
+</a>
+
+{% endblock  %}
