@@ -1,0 +1,18 @@
+* {
+    background-color: #0d6efd;
+}
+
+.blog {
+    padding: 1em;
+    height: 88vh;
+    background-color: rgba(51,133,217,255);
+    color: white;
+    overflow-y: scroll;
+}
+
+.smbut {
+    background-color: lightgrey;
+    border-radius: 0.7em;
+    padding: 0.2em;
+    font-size: x-small;
+}

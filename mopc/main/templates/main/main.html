@@ -8,15 +8,15 @@ My Own Private Cloud
 
 <div class="main">
     <div class="left">
-        <div class="tile org" style="background-color: white; text-align: center; padding-top: 3px">
+        <div class="tile org active" style="text-align: center; padding-top: 3px">
             <a href="{% url 'index' %}">
-                <i class="fas fa-address-book" style="font-size: 4em; color: green; background-color: white;"></i>
+                <i class="fas fa-address-book active" style="font-size: 4em; color: green;"></i>
             </a>
             <p class="active" style="font-size: xx-small; color:black;">Contacts</p>
         </div>
-        <div class="tile org" style="background-color: grey; text-align: center; padding-top: 3px">
+        <div class="tile org inactive" style="text-align: center; padding-top: 3px">
             <a href="#">
-                <i class="far fa-calendar-alt" style="font-size: 4em; color: green; background-color: grey;"></i>
+                <i class="far fa-calendar-alt inactive" style="font-size: 4em; color: green;"></i>
             </a>
             <p class="inactive" style="font-size: xx-small; color:black;">Calendar</p>
         </div>
@@ -34,30 +34,33 @@ My Own Private Cloud
         <div class="cont-row">
             <div class="tile leisure active">
                 <a href="{% url 'photologue:pl-gallery-archive' %}">
-                    <i class="fas fa-images" style="font-size: 4em; color:green; background-color: white;"></i>
+                    <i class="fas fa-images active" style="font-size: 4em; color:green;"></i>
                 </a>
                 <p class="active" style="font-size: xx-small; color:black;">Photo albums</p>
             </div>
             <div class="tile leisure inactive">
                 <a href="#">
-                    <i class="fas fa-sticky-note" style="font-size: 4em; color:green; background-color: grey;"></i>
+                    <i class="fas fa-sticky-note inactive" style="font-size: 4em; color:green;"></i>
                 </a>
                 <p class="inactive" style="font-size: xx-small; color:black;">Notes</p>
             </div>
-            <div class="tile leisure inactive">
-                <a href="#">
-                    <i class="fas fa-bold" style="font-size: 4em; color:green; background-color: grey;"></i>
+            <div class="tile leisure active">
+                <a href="{% url 'blog'  %}">
+                    <i class="fas fa-bold active" style="font-size: 4em; color:green;"></i>
                 </a>
-                <p class="inactive" style="font-size: xx-small; color:black;">Blog</p>
+                <p class="active" style="font-size: xx-small; color:black;">Blog</p>
             </div>
             <div class="tile leisure inactive">
                 <a href="#">
-                    <i class="fas fa-gamepad" style="font-size: 4em; color:green; background-color: grey;"></i>
+                    <i class="fas fa-gamepad inactive" style="font-size: 4em; color:green;"></i>
                 </a>
                 <p class="inactive" style="font-size: xx-small; color:black;">Games</p>
             </div>
-            <div class="tile undefined">
-
+            <div class="tile leisure inactive">
+                <a href="#">
+                    <i class="fas fa-sitemap inactive" style="font-size: 4em; color:green;"></i>
+                </a>
+                <p class="inactive" style="font-size: xx-small; color:black;">Genealogy</p>
             </div>
             <div class="tile undefined">
 
@@ -67,9 +70,9 @@ My Own Private Cloud
             </div>
         </div>
         <div class="cont-row">
-            <div class="tile pro active" style="background-color: white; text-align: center; padding-top: 3px">
+            <div class="tile pro active" style="text-align: center; padding-top: 3px">
                 <a href="https://hebilidu.github.io">
-                    <i class="fas fa-book" style="font-size: 4em; color: green; background-color: white;"></i>
+                    <i class="fas fa-book active" style="font-size: 4em; color: green;"></i>
                 </a>
                 <p class="active" style="font-size: xx-small; color:black;">Portfolio</p>
             </div>
@@ -94,9 +97,9 @@ My Own Private Cloud
         </div>
     </div>
     <div class="right">
-        <div class="tile tech inactive" style="background-color: grey; text-align: center; padding-top: 3px">
+        <div class="tile tech inactive" style="text-align: center; padding-top: 3px">
             <a href="#">
-                <i class="fas fa-server" style="font-size: 4em; color:green; background-color: grey;"></i>
+                <i class="fas fa-server inactive" style="font-size: 4em; color:green;"></i>
             </a>
             <p class="inactive" style="font-size: xx-small; color:black;">File sharing</p>
         </div>

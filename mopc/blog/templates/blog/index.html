@@ -1,0 +1,17 @@
+{%   extends 'partials/blog.html' %}
+
+{% block title %}
+Latest posts
+{% endblock %}
+
+{% block content  %}
+
+{% for p in posts %}
+    <article>
+        <h2 class="title">{{ p.title }}</h2>
+        <time>{{ p.date_created }}</time>
+        <p>{{ p.intro }}</p>
+    </article>
+{% endfor %}
+
+{% endblock  %}

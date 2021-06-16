@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('social_django.urls', namespace='social')),
     path('contacts/', include('contacts.urls')),
     path('photologue/', include('photologue.urls', namespace='photologue')),
+    path('blog/', include('blog.urls')),
 ]
 
 if settings.DEBUG:
