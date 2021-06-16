@@ -6,16 +6,22 @@ Post detail
 
 {% block content  %}
 
-    <article class="content">
-        <h1>{{ post.title }}</h2>
-        <time>{{ post.date_created }}</time>
-        {% for c in post.category.all %}
-            <a href = "#">
-                <span class="smbut">{{ c.label }}</span>
-            </a>
-        {%  endfor %}
-        <p><strong>{{ post.intro }}</strong></p>
-        <p>{{ post.content }}</p>
-    </article>
+<div class="page-title">{{ post.title }}</div>
+
+<div class="article">
+    <owner>{{ post.owner }} | </owner>
+    <time>{{ post.date_created }}</time>
+    {% for c in post.category.all %}
+        <a href = "{% url 'category' c.slug %}">
+            <button type="button" class="btn btn-info btn-sm">{{ c.label }}</button>
+        </a>
+    {%  endfor %}
+    <p><strong>{{ post.intro }}</strong></p>
+    <hr>
+    <p>{{ post.content }}</p>
+</div>
+<a href="{% url 'blog' %}">
+    <button type="button" class="btn btn-primary btn-sm">Back to list</button>
+</a>
 
 {% endblock  %}

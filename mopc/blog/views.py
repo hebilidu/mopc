@@ -18,3 +18,12 @@ def detail(request, slug):
     }
 
     return render(request, 'blog/detail.html', context)
+
+def category(request, slug):
+    category = Category.objects.get(slug=slug)
+
+    context = {
+        'category': category
+    }
+
+    return render(request, 'blog/category.html', context)

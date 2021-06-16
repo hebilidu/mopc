@@ -6,12 +6,23 @@ Latest posts
 
 {% block content  %}
 
+<div class="page-title">Latest posts</div>
+
 {% for p in posts %}
-    <article>
+    <div class="article">
         <h2 class="title">{{ p.title }}</h2>
+        <owner>{{ p.owner }} | </owner>
         <time>{{ p.date_created }}</time>
+        {% for c in p.category.all %}
+        <a href = "{% url 'category' c.slug %}">
+            <button type="button" class="btn btn-info btn-sm">{{ c.label }}</button>
+        </a>
+    {%  endfor %}
         <p>{{ p.intro }}</p>
-    </article>
+        <a href="{% url 'detail' p.slug  %}">
+            <button type="button" class="btn btn-primary btn-sm">Read more...</button>
+        </a>
+    </div>
 {% endfor %}
 
 {% endblock  %}

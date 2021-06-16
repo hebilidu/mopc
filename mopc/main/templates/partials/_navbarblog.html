@@ -12,19 +12,8 @@
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery views</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="{% url 'photologue:pl-gallery-archive' %}">Date view</a></li>
-            <li><a class="dropdown-item" href="{% url 'photologue:gallery-list' %}">List view</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Photo views</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="{% url 'photologue:pl-photo-archive' %}">Date view</a></li>
-            <li><a class="dropdown-item" href="{% url 'photologue:photo-list' %}">List view</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blog' %}">All posts</a>
         </li>
       </ul>
 

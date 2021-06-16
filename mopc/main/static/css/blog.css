@@ -2,6 +2,10 @@
     background-color: #0d6efd;
 }
 
+body {
+    line-height: 1!important;
+}
+
 .blog {
     padding: 1em;
     height: 88vh;
@@ -10,9 +14,19 @@
     overflow-y: scroll;
 }
 
-.smbut {
-    background-color: lightgrey;
-    border-radius: 0.7em;
-    padding: 0.2em;
-    font-size: x-small;
+.page-title {
+    background-color: rgba(51,133,217,255);
+    font-size: 3rem;
+}
+
+.article {
+    margin: 1em;
+    padding: 0.6em;
+    border: 1px solid white;
+    border-radius: 0.6em;
+}
+
+owner,
+time {
+    font-size: small;
 }
