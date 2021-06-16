@@ -6,16 +6,18 @@ List categories
 
 {% block content %}
 
-<div class="page-title">List categories}</div>
+<div class="page-title">List categories</div><br>
+<ul style="line-height: 2;">
+    {% for c in categories %}
+    <li>{{ c.label }} (slug = {{ c.slug }})</li>
+    {% endfor %}
+</ul>
+<br>
 
-{% for c in categories %}
-<div class="category">
-    <h1>{{ c.label }} | slug = {{ c.slug }}</h1>
-</div>
-{% endfor %}
-
-<a href="{% url 'blog' %}">
-    <button type="button" class="btn btn-primary btn-sm">Back to list of posts</button>
+{% if user.is_staff %}
+    <a href="{% url 'addcategory' %}">
+        <button type="button" class="btn btn-primary btn-sm">Add a category</button>
 </a>
+{% endif %}
 
 {% endblock  %}

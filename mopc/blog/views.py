@@ -21,6 +21,23 @@ class CategoryDetailView(generic.DetailView):
     template_name = 'blog/category.html'
     context_object_name = 'category'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['action'] = 'View category'
+        return context
+
+
+class CategoryCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Category
+    fields = ['label']
+    template_name = 'blog/category.html'
+    success_url = reverse_lazy('categories')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['action'] = 'Add category'
+        return context
+
 
 class PostListView(generic.ListView):
     model = Post
@@ -41,14 +58,17 @@ class PostCreateView(LoginRequiredMixin, generic.CreateView):
         'title', 
         'intro', 
         'content',
-        'picture']
+        'picture'
+    ]
+    template_name = 'blog/add.html'
     success_url = reverse_lazy('blog')
 
     def form_valid(self, form):
         post = form.save(commit=False)
-        post.owner = self.request.user.id
+        post.owner = self.request.user
         post.save()
         return super().form_valid(form)
+
 
 class CommentCreateView(LoginRequiredMixin, generic.CreateView):
     model = Comment
