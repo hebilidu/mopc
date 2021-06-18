@@ -31,7 +31,7 @@ On top of this general definition, note that clouds may be owned by corporations
 - [ ] Set up Django multi-tenancy - Day55
 - [x] Set up address book app - Day52
 - [ ] Set up notes app - Day54
-- [ ] Set up blog app - Day54
+- [x] Set up blog app - Day54
 - [x] Set up photo album app - Day 53
 - [ ] Set up file storage and sharing service - Day55
 - [ ] Set up genealogy app
