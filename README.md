@@ -1,4 +1,4 @@
-# mopc - My Own Private Cloud
+# mopc - My Own Private Cloud - http://mopc.hopto.org:8008
 ## Are you concerned with who has rights over your personal data ? Well you should be.
 All the personal data that one posts onto the web constitutes one's digital self. In the physical world, unless you are a public figure, personal data are deemed private and as belonging to you. In the digital world, not so much. For instance, it may depend on where they are actually stored (the bridge with the physical world is the storage and communication hardware that belong to corporations or other individuals). If others than yourself have right over your personal data, they might use them not in your best interests.
 ## Why this project ?
@@ -48,6 +48,10 @@ On top of this general definition, note that clouds may be owned by corporations
 * https://fontawesome.com/
 * Photo gallery: https://github.com/richardbarran/django-photologue
 * Notes Taking: ITSourceCode.com
+
+## Information about the server set-up
+I am using a Raspberry Pi 3 configured as an Ubuntu (linux) server with a LAMP environment (Linux-Apache-PostgreSQL-Python).
+While fully operational, it by no means a production environment.
 
 ## Subjects to further explore
 * Set up server to run interactive Python apps
