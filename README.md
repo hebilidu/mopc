@@ -51,7 +51,7 @@ On top of this general definition, note that clouds may be owned by corporations
 
 ## Information about the server set-up
 I am using a Raspberry Pi 3 configured as an Ubuntu (linux) server with a LAMP environment (Linux-Apache-PostgreSQL-Python).
-While fully operational, it by no means a production environment..
+While fully operational, it by no means a production environment.
 
 ## Subjects to further explore
 * Set up server to run interactive Python apps
