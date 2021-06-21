@@ -25,7 +25,7 @@ On top of this general definition, note that clouds may be owned by corporations
 - [x] Fill README.md page (project brief) - Day51
 - [x] Issue a prototype of the project home page - Day52
 - [x] Lists functionalities and applications to add to project - Day51
-- [ ] Priorize above list, define scope to fit a two weeks window, plan - Day51
+- [x] Priorize above list, define scope to fit a two weeks window, plan - Day51
 - [x] Select technical platform(s) - Day51
 - [ ] Set up Django social authentication - Day52
 - [ ] Set up Django multi-tenancy - Day55
