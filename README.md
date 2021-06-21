@@ -48,6 +48,7 @@ On top of this general definition, note that clouds may be owned by corporations
 * https://fontawesome.com/
 * Photo gallery: https://github.com/richardbarran/django-photologue
 * Notes Taking: ITSourceCode.com
+* Notes Taking: https://github.com/django-ckeditor/django-ckeditor
 
 ## Information about the server set-up
 I am using a Raspberry Pi 3 configured as an Ubuntu (linux) server with a LAMP environment (Linux-Apache-PostgreSQL-Python).

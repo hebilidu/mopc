@@ -1,6 +1,10 @@
+ul{
+    list-style-type: none;
+}
+
 .gridy{
     display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: 1fr 2fr 6fr;
     grid-template-areas: "a b c";
     margin: 0;
     height: 89vh;
@@ -21,6 +25,11 @@
     font-size: small;
 }
 
+.category-list ul,
+.note-list ul{
+    padding: 10px 15px;
+}
+
 .notes{
     grid-area: b;
     padding: 0;
@@ -33,4 +42,14 @@
     padding: 0;
     margin:0;
     font-size: small;
+}
+
+.cdes{
+    margin-bottom: 5px;
+}
+
+.category-form{
+    border: 1px solid;
+    padding: 2px 5px 5px 10px;
+    margin: 5px 0 5px 0;
 }

@@ -1,7 +1,7 @@
 from django.db import models
-from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from ckeditor.fields import RichTextField
 
 
 class Category(models.Model):
@@ -20,7 +20,7 @@ class Category(models.Model):
 class Note(models.Model):
     category = models.ForeignKey(Category, on_delete = models.PROTECT, default='undefined')
     title = models.CharField(max_length=255)
-    content = models.TextField()
+    content = RichTextField()
     date_edited = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     image = models.ImageField(default='',upload_to='notes/images',blank=True,null=True)

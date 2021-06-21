@@ -1,47 +1,117 @@
 {% extends 'partials/notes.html' %}
+{% load bootstrap %}
+
+{% block title %}{{ action }}{% endblock %}
 
 {% block content %}
 <div class="gridy">
 
     <div class="categories a">
-        <div class="head-a a-inv">Categories</div>
-        <div class="cdes-a a">
-            <button>add</button><button>edit</button><button>delete</button>
+        <div class="head a-inv">Categories</div>
+        <div class="cdes a">
+            <a href="{% url 'add_category' %}"><button>add category</button></a>
         </div>
+
+        {% if action == 'Add category' %}
+        <div class="category-form">
+            <form method="POST">
+                {% csrf_token %}            
+                {{ form.as_p }}
+                <button type="submit">Submit</button>
+                <button onclick="javascript:history.back();">Cancel</button>
+            </form>
+        </div>
+        {% endif %}
+
         <div class="category-list">
             <ul>
-                <li>All</li>
+                {% if action == 'Display all' %}
+                    <li class="a-inv">All</li>
+                {% else %}
+                    <li><a href="{% url 'notes' %}">All</a></li>
+                {% endif %}
                 {% for c in categories %}
-                <li>{{ c.label }}</li>
+                    {% if c == category %}
+                        <li>
+                            <a href="{% url 'view_category' c.id %}" class="a-inv">{{ c.label }}</a>
+                        </li>
+                    {% else %}
+                        <li><a href="{% url 'view_category' c.id %}">{{ c.label }}</a></li>
+                    {% endif %}
                 {% empty %}
+                    <p>No categories yet..</p>
                 {% endfor %}
             </ul>
         </div>
     </div>
 
     <div class="notes b">
-        <div class="head-b b-inv">Notes</div>
-        <div class="cdes-b b">
-            <button>add</button><button>edit</button>
+        <div class="head b-inv">Notes</div>
+        <div class="cdes b">
+            <a href="{% url 'add_note' %}"><button>add note</button></a>
         </div>
         <div class="note-list">
             <ul>
                 {% for n in notes %}
-                <li>{{ n.title }}</li>
+                <li><a href='{% url 'edit_note' n.pk %}'>{{ n.title }}</a></li>
                 {% empty %}
+                <p>No notes in this category yet..</p>
                 {% endfor %}
             </ul>
         </div>
     </div>
 
     <div class="note c">
-        <div class="head-c c-inv">Note detail</div>
-        <div class="cdes-c c">
-            <button>save</button><button>delete</button>
+        <div class="head c-inv">Note detail</div>
+        <div class="cdes c">
         </div>
+        {% if action == 'Add note' %}
+        <div class=note-detail">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.media}}
+                {{ form | bootstrap }}
+                <br>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        {% elif action == 'Edit note' %}
         <div class="note-detail">
-
-        </div>  
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.media}}
+                {{ form | bootstrap }}
+                <br>
+                <button class="btn btn-success btn-sm" type="submit">Save</button>
+                <a href="{% url 'delete_note' note.id %}">
+                    <span class="btn btn-danger btn-sm">Delete</span>
+                </a>
+            </form>
+        </div>
+        {% elif action == 'Delete note' %}
+        <div class="note-detail">
+            <h3>{{ note.title}}</h3>
+            <span class="x-small">Last edited: {{ note.date_edited }}</span>
+            <hr>
+            <p>{{ note.content }}</p>
+            <form method="post">
+                {% csrf_token %}
+                <hr>
+                <p style="color: red;">Please confirm deletion</p>
+                <input class="btn btn-danger btn-sm" type="submit" value="Confirm">
+                <button class="btn btn-secondary btn-sm" onclick="javascript:history.back();">Cancel</button>
+            </form>
+        </div>
+        {% else %}
+        <div class="note-detail">
+            {% if notes %}
+                <h3>{{ notes.first.title}}</h3>
+                <span class="x-small">Last edited: {{ notes.first.date_edited }}</span>
+                <hr>
+                <p>{{ notes.first.content }}</p>
+            {% endif %}
+        </div>
+        {% endif %}  
     </div>
 </div>
 {% endblock %}

@@ -17,7 +17,7 @@
         {% if user.is_authenticated %}
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <button class="nav-link button" onclick="toggle()">Toggle fullscreen</button>
+            <span class="nav-link" onclick="toggle()">Toggle fullscreen</span>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Hello, {{ user.username }}</a>
@@ -29,7 +29,7 @@
         {% else %}
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <button class="nav-link button" onclick="toggle()">Toggle fullscreen</button>
+            <span class="nav-link" onclick="toggle()">Toggle fullscreen</span>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'login' %}">Login</a>
