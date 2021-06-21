@@ -25,6 +25,7 @@ urlpatterns = [
     path('contacts/', include('contacts.urls')),
     path('photologue/', include('photologue.urls', namespace='photologue')),
     path('blog/', include('blog.urls')),
+    path('notes/', include('notes.urls')),
 ]
 
 if settings.DEBUG:

@@ -1,36 +1,36 @@
 .gridy{
     display: grid;
     grid-template-columns: 1fr 1fr 4fr;
-    margin: 0;
     grid-template-areas: "a b c";
-}
-
-.gridy::before{
-    content: 'display: grid';
+    margin: 0;
     height: 89vh;
     overflow-y: scroll;
 }
 
+.a{background-color: bisque; color: black;}
+.b{background-color: rgb(204, 255, 196); color: black;}
+.c{background-color: white; color: black;}
+.a-inv{background-color: black; color: bisque;}
+.b-inv{background-color: black; color: rgb(204, 255, 196);}
+.c-inv{background-color: black; color: white;}
+
 .categories{
     grid-area: a;
-    background-color: bisque;
-    color:black;
-    padding: 1rem;
-    font-size: x-small;
+    padding: 0;
+    margin:0;
+    font-size: small;
 }
 
 .notes{
     grid-area: b;
-    background-color: bisque;
-    color: black;
-    padding: 1rem;
-    font-size: x-small ;
+    padding: 0;
+    margin:0;
+    font-size: small ;
 }
 
 .note{
     grid-area: c;
-    background-color: white;
-    color:black;
-    padding: 1rem;
-    font-size: large;
+    padding: 0;
+    margin:0;
+    font-size: small;
 }

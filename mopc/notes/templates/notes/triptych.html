@@ -1,24 +1,47 @@
-{% extends 'partials/base.html' %}
-
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/notes.css' %}">
-{% endblock %}
+{% extends 'partials/notes.html' %}
 
 {% block content %}
 <div class="gridy">
 
-    <div class="categories">
-        <div class="head-a">Categories</div>
-        <div class="cdes-a">Commands</div>
+    <div class="categories a">
+        <div class="head-a a-inv">Categories</div>
+        <div class="cdes-a a">
+            <button>add</button><button>edit</button><button>delete</button>
+        </div>
+        <div class="category-list">
+            <ul>
+                <li>All</li>
+                {% for c in categories %}
+                <li>{{ c.label }}</li>
+                {% empty %}
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 
-    <div class="notes">
-        <div class="head-b">Notes</div>
-        <div class="cdes-b">Commands</div>
+    <div class="notes b">
+        <div class="head-b b-inv">Notes</div>
+        <div class="cdes-b b">
+            <button>add</button><button>edit</button>
+        </div>
+        <div class="note-list">
+            <ul>
+                {% for n in notes %}
+                <li>{{ n.title }}</li>
+                {% empty %}
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-    <div class="note">
-        <div class="head-c">Note</div>
-        <div class="cdes-c">Commands</div>  
+
+    <div class="note c">
+        <div class="head-c c-inv">Note detail</div>
+        <div class="cdes-c c">
+            <button>save</button><button>delete</button>
+        </div>
+        <div class="note-detail">
+
+        </div>  
     </div>
 </div>
 {% endblock %}
