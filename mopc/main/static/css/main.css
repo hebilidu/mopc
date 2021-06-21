@@ -10,7 +10,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 0.8em;
-    padding: -2em;
+    /* padding: -2em; */
     cursor: pointer;
 }
 
@@ -51,7 +51,36 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
 
+.main-login {
+    color: white;
+    padding: 1em;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.main-signup {
+    color: white;
+    padding: 1em;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-signup {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    background-color:white;
+    color: black;
 }
 
 .cont {

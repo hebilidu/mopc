@@ -1,0 +1,24 @@
+{% extends 'partials/base.html' %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/notes.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="gridy">
+
+    <div class="categories">
+        <div class="head-a">Categories</div>
+        <div class="cdes-a">Commands</div>
+    </div>
+
+    <div class="notes">
+        <div class="head-b">Notes</div>
+        <div class="cdes-b">Commands</div>
+    </div>
+    <div class="note">
+        <div class="head-c">Note</div>
+        <div class="cdes-c">Commands</div>  
+    </div>
+</div>
+{% endblock %}

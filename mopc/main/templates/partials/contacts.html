@@ -1,0 +1,42 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contacts.css' %}">
+    <script src="https://kit.fontawesome.com/6b20b1c14d.js" crossorigin="anonymous"></script>
+
+    {% bootstrap_css %}
+
+    {% block css %}
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+
+    {% include 'partials/_navbarcontacts.html' %}
+
+    {% bootstrap_messages %}
+
+    <div class="contacts">
+    {% block content %}
+    {% endblock %}
+    </div>
+   
+    {% bootstrap_javascript %}
+
+    <div class="fixed-bottom bg-primary text-center">© 2021 Liên Duong - All rights reserved</div>
+
+</body>
+
+</html>

@@ -8,6 +8,9 @@ class Category(models.Model):
     label = models.CharField(max_length=255)
     description = models.CharField(max_length=500)
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     def __str__(self):
         return self.label
 
@@ -18,7 +21,7 @@ class Note(models.Model):
     category = models.ForeignKey(Category, on_delete = models.PROTECT, default='undefined')
     title = models.CharField(max_length=255)
     content = models.TextField()
-    date_posted = models.DateTimeField(default=timezone.now)
+    date_edited = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     image = models.ImageField(default='',upload_to='notes/images',blank=True,null=True)
     doc = models.FileField(default='',upload_to='notes/docs',blank=True,null=True)

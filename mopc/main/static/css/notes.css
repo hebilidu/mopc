@@ -1,0 +1,36 @@
+.gridy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    margin: 0;
+    grid-template-areas: "a b c";
+}
+
+.gridy::before{
+    content: 'display: grid';
+    height: 89vh;
+    overflow-y: scroll;
+}
+
+.categories{
+    grid-area: a;
+    background-color: bisque;
+    color:black;
+    padding: 1rem;
+    font-size: x-small;
+}
+
+.notes{
+    grid-area: b;
+    background-color: bisque;
+    color: black;
+    padding: 1rem;
+    font-size: x-small ;
+}
+
+.note{
+    grid-area: c;
+    background-color: white;
+    color:black;
+    padding: 1rem;
+    font-size: large;
+}

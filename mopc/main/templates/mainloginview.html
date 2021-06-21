@@ -2,15 +2,17 @@
 {% load bootstrap %}
 
 {% block title %}
-My Own Private Cloud
+Login
 {% endblock %}
 
 {% block content  %}
-<div class="main-logo">
+<div class="main-login">
+    <h3>Log in to My Own Private Cloud</h3>
     <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
+        {{ form|bootstrap }}
+
+        <button type="submit" style="border: solid 2px white; color: white; border-radius: 1em; margin: 0.7em; padding: 0.5em;">Login</button>
     </form>
 </div>
 {% endblock %}

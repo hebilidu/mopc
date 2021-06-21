@@ -7,19 +7,11 @@ body{
 	margin: 0;
 }
 
-.contacts {
-    padding: 1em;
-    height: 89vh;
-    background-color: rgba(51,133,217,255);
-    color: white;
-    overflow-y: scroll;
-}
-
 .container{
 	max-width: 428px;
 	margin: 0 auto;
 	background-color: #313438;
-	min-height: 80vh;
+	min-height: 100vh;
 }
 
 a{
@@ -28,8 +20,8 @@ a{
 
 .hero{
 	color: white;
-	background: linear-gradient(90deg, rgba(111, 146, 177, 1) 0%, rgba(89, 92, 173, 1) 100%);	
-	padding: 1em 0; 
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);	
+	padding: 2em 0; 
 }
 
 .back-btn{
@@ -39,7 +31,7 @@ a{
 }
 
 .contact-info{
-	padding: 1em;
+	padding: 1.5em;
 }
 
 .hero-info{
@@ -58,7 +50,7 @@ a{
 }
 
 .friend{
-	background-color: #5e73a8;
+	background-color: #75A85E;
 }
 
 .info-line{
@@ -67,7 +59,7 @@ a{
 	width: 90%;
 	margin: 0 auto;
 	padding: 1em 2em;
-	margin-top: 1em;
+	margin-top: 2em;
 	border-radius: 20px;
 	box-shadow: inset 6px 6px 12px #2d2f33, 
             inset -6px -6px 12px #35393d;
@@ -79,7 +71,7 @@ p{
 }
 
 .icon-gradient{
-	background: linear-gradient(90deg, rgba(111, 146, 177, 1) 0%, rgba(89, 92, 173, 1) 100%);
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
 	border-radius: 100px;
 	font-size: 1.5em;
 	padding: .5em;
@@ -100,7 +92,7 @@ p{
 
 .button-container{
 	background-color: #313438;
-	padding: 1em 1em;
+	padding: 2em 3.5em;
 	color: #fff;
 }
 
@@ -110,7 +102,7 @@ p{
 	width: 90%;
 	margin: 0 auto;
 	align-items: center;
-	padding: 0.3em 1em;
+	padding: 1em 2em;
 	border-radius: 20px;
 	box-shadow:  6px 6px 12px #2d2f33, 
              -6px -6px 12px #35393d;
@@ -121,7 +113,7 @@ p{
 	 border: none;
 	 color: #fff;
 	 font-size: 1.3em;
-	 padding-left: 0.3em 1em;
+	 padding-left: 1.5em;
 	 outline: none;
 	cursor: pointer;
 }

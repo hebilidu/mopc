@@ -7,14 +7,6 @@ body{
 	margin: 0;
 }
 
-.contacts {
-    padding: 1em;
-    height: 89vh;
-    background-color: rgba(51,133,217,255);
-    color: white;
-    overflow-y: scroll;
-}
-
 .container{
 	max-width: 428px;
 	margin: 0 auto;

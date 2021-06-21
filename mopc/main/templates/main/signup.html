@@ -1,20 +1,20 @@
 {% extends 'partials/base.html'%}
 
-{% block title %}
-My Own Private Cloud
-{% endblock %}
+{% block title %}Sign up{% endblock %}
 
 {% block content  %}
-<div class="main-logo">
-  <h2>Sign up to My Own Private Cloud</h2>
+<div class="main-signup">
+  <div>
+    <h2>Sign up to My Own Private Cloud</h2>
+  </div>
 
   <form method="post">
     {% csrf_token %}
     {% for field in form %}
     <p>
-      <div class="cont-left">
+      <div>
         {{ field.label_tag }}
-        <div class="cont-row">
+        <div class="cont-signup">
           <span>
           {{ field }}
           </span>
@@ -28,7 +28,8 @@ My Own Private Cloud
       </div>
     </p>
     {% endfor %}
-    <button type="submit">Sign up</button>
+    <button type="submit" class="btn-primary">Sign up</button>
   </form>
+
 </div>
 {% endblock %}
