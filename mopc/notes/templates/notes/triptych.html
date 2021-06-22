@@ -53,9 +53,9 @@
         <div class="note-list">
             <ul>
                 {% for n in notes %}
-                <li><a href='{% url 'edit_note' n.pk %}'>{{ n.title }}</a></li>
+                    <li><a href="{% url 'edit_note' n.pk %}"">{{ n.title }}</a></li>
                 {% empty %}
-                <p>No notes in this category yet..</p>
+                    <p>No notes in this category yet..</p>
                 {% endfor %}
             </ul>
         </div>
