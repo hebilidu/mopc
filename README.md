@@ -21,7 +21,7 @@ On top of this general definition, note that clouds may be owned by corporations
     * Blog:
 ![Blog](/mopc/main/static/img/Screenshot_blog_detail.png "Blog")
     * Notes taking:
-![Notes](/mopc/main/static/img/Screenshot_notes.png "Blog")
+![Notes](/mopc/main/static/img/Screenshot_notes.png "Notes")
 
 ## TASKS LIST
 - [x] Fill README.md page (project brief) - Day51
@@ -50,7 +50,6 @@ On top of this general definition, note that clouds may be owned by corporations
 * bootstrap5
 * https://fontawesome.com/
 * Photo gallery: https://github.com/richardbarran/django-photologue
-* Notes Taking: ITSourceCode.com
 * Notes Taking: https://github.com/django-ckeditor/django-ckeditor
 
 ## Information about the server set-up
