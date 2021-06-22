@@ -20,6 +20,8 @@ On top of this general definition, note that clouds may be owned by corporations
 ![Photo Album](/mopc/main/static/img/Screenshot_gallery.png "Photo Album")
     * Blog:
 ![Blog](/mopc/main/static/img/Screenshot_blog_detail.png "Blog")
+    * Notes taking:
+![Notes](/mopc/main/static/img/Screenshot_notes.png "Blog")
 
 ## TASKS LIST
 - [x] Fill README.md page (project brief) - Day51
