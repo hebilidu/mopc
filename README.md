@@ -30,15 +30,15 @@ On top of this general definition, note that clouds may be owned by corporations
 - [ ] Set up Django social authentication - Day52
 - [ ] Set up Django multi-tenancy - Day55
 - [x] Set up address book app - Day52
-- [ ] Set up notes app - Day54
+- [x] Set up notes app - Day54 [DONE Day57]
 - [x] Set up blog app - Day54
 - [x] Set up photo album app - Day 53
 - [ ] Set up file storage and sharing service - Day55
 - [ ] Set up genealogy app
 - [ ] Set up news aggregator app
-- [ ] Set up professional section (CV, portfolio) - Day56-57
+- [x] Set up professional section (CV, portfolio) - Day56-57
 - [ ] Set up game section (asteroids interactive game) - Day58-59
-- [x] Set up server (owned or virtual) - Day58-59
+- [x] Set up server (owned or virtual) - Day58-59 [DONE Day55]
 
 ## Modules, packages and other resources used in this project
 * Login with social network id: https://python-social-auth.readthedocs.io/en/latest/index.html
