@@ -94,7 +94,7 @@
             <span class="x-small">Last edited: {{ note.date_edited }}</span>
             <hr>
             {% autoescape off %}
-            <p>{{ note.content }}</p>
+                <p>{{ note.content }}</p>
             {% endautoescape %}
             <form method="post">
                 {% csrf_token %}
@@ -111,7 +111,7 @@
                 <span class="x-small">Last edited: {{ notes.first.date_edited }}</span>
                 <hr>
                 {% autoescape off %}
-                <p>{{ notes.first.content }}</p>
+                    <p>{{ notes.first.content }}</p>
                 {% endautoescape %}
             {% endif %}
         </div>
