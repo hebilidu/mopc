@@ -167,3 +167,13 @@ input {
     justify-content: center;
     opacity: .9;
 }
+
+.i-style{
+    font-size: 4em;
+    color: green;
+}
+
+.p-style{
+    font-size: xx-small;
+    color:black;
+}
