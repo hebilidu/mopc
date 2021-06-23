@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     {% bootstrap_css %} 
+
     {% block css %}
+    {% endblock %}
+    
+    {% block extra_css %}
     {% endblock %}
 </head>
 
@@ -25,9 +29,14 @@
     {% block content%}
     {% endblock %}
 
-    {% bootstrap_javascript %}    
+    {% bootstrap_javascript %}
+
     {% block js %}
     {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
     <div class="fixed-bottom bg-primary text-center">© 2021 Liên Duong - All rights reserved</div>
     <script src="{% static 'js/main.js' %}"></script>
 

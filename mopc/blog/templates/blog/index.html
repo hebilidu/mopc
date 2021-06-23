@@ -30,6 +30,9 @@ Latest posts
             <button type="button" class="btn btn-primary btn-sm">Read more...</button>
         </a>
     </div>
+{% empty %}
+    <br>
+    <p style="color: black; text-align: center;">No posts found..</p>
 {% endfor %}
 
 {% endblock  %}

@@ -1,0 +1,47 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/joyous.css' %}">
+    {% bootstrap_css %} 
+
+    {% block css %}
+    {% endblock %}
+    
+    {% block extra_css %}
+    {% endblock %}
+</head>
+
+<body>
+
+    {% include 'partials/_navbar.html' %}
+
+    {% bootstrap_messages %}
+
+    <div class="main-joyous">
+        {% block content%}
+        {% endblock %}
+    </div>
+
+    {% bootstrap_javascript %}
+
+    {% block js %}
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <div class="fixed-bottom bg-primary text-center">© 2021 Liên Duong - All rights reserved</div>
+    <script src="{% static 'js/joyous.js' %}"></script>
+
+</body>
+
+</html>

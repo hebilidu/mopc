@@ -1,0 +1,241 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.contacts {
+    padding: 1em;
+    height: 89vh;
+    background-color: rgba(51,133,217,255);
+    color: white;
+    overflow-y: scroll;
+}
+
+.cont-contacts {
+	max-width: 428px;
+	margin: auto;
+	background-color: #313438;
+}
+
+p{
+	margin: 0;
+	padding-left: 2em;
+}
+
+.header{
+	display: flex;
+	justify-content: space-evenly;
+	color: #fff;
+	background: linear-gradient(90deg, rgba(111, 146, 177, 1) 0%, rgba(89, 92, 173, 1) 100%);
+	padding: 2em 0;
+	align-items: center;
+}
+
+.contact-search{
+	font-size: 1.2em;
+	padding:.3em .3em;
+	border-radius: 100px;
+	border:1px solid white;
+	outline: none;
+}
+
+
+.contacts-library{
+	background: #313438;
+}
+
+.add{
+	color: #fff;
+	font-size: 1.5em;
+}
+
+i{
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.contact-name{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+hr{
+	border: 1px solicontactd #494a4b;
+}
+
+.list__item{
+	list-style: none;
+}
+
+.relationship{
+	color: #fff;
+	width: 6em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	background-color: #7744ab;
+}
+
+.contact-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5em;
+	transition: 0.3s;
+}
+
+.contact-section:hover{
+	background-color: #48494a;
+}
+
+.text{
+	padding-left: 1em;
+}
+
+/* STYLE-DETAILS */
+.back-btn{
+	color: #fff;
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+
+.hero{
+	color: #fff;
+	background: linear-gradient(90deg, rgba(111, 146, 177, 1) 0%, rgba(89, 92, 173, 1) 100%);	
+	padding: 1em; 
+}
+
+.hero-info{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.contact-info{
+	padding: 1em;
+}
+
+.info-line{
+	display: flex;
+	color: #fff;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	margin-top: 1em;
+	border-radius: 20px;
+	box-shadow:  6px 6px 12px #2d2f33, 
+             -6px -6px 12px #35393d;
+}
+
+.icon-gradient{
+	background: linear-gradient(90deg, rgba(111, 146, 177, 1) 0%, rgba(89, 92, 173, 1) 100%);
+	border-radius: 100px;
+	font-size: 1.5em;
+	padding: .5em;
+}
+
+#location{
+	padding: .5em .6em;
+}
+
+.edit-button{
+	/* background-color: #313438;
+	padding: 2.5em 3.5em;
+	text-align: center;
+	color: #fff; */
+	display: flex;
+	color: #fff;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	border-radius: 20px;
+	box-shadow:  6px 6px 12px #2d2f33, 
+             -6px -6px 12px #35393d;
+}
+
+.button-container{
+	background-color: #313438;
+	/* padding: 2em 3.5em; */
+	padding: 1em;
+	color: #fff;
+}
+
+.button{
+	background-color: #313438;
+	border: none;
+	color: #fff;
+	font-size: 1.3em;
+	padding-left: 1.5em;
+	outline: none;
+   cursor: pointer;
+}
+
+/* EDIT CONTACT */
+.type{
+	border: none;
+	background: none;
+	padding-left: 2em;
+	font-size: 1.2em;
+	color: #fff;
+	outline: none;
+}
+
+.update-contact{
+	display: flex;
+	color: #fff;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 0.3em 1em;
+	border-radius: 20px;
+	box-shadow:  6px 6px 12px #2d2f33, 
+             -6px -6px 12px #35393d;
+}
+
+/* DELETE CONTACT */
+.delete-container{
+	background-color: #313438;
+	color: #fff;
+	text-align: center;
+	padding: 2em 3.5em;
+}
+
+.delete-contact{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	border-radius: 20px;
+	box-shadow:  6px 6px 12px #2d2f33, 
+             -6px -6px 12px #35393d;
+}
+
+.delete-button{
+	 background-color: #313438;
+	 border: none;
+	 color: #fff;
+	 font-size: 1.3em;
+	 padding-left: 1.5em;
+	 cursor: pointer;
+}
+
+.delete-icon{
+	background: linear-gradient(90deg, rgba(111, 146, 177, 1) 0%, rgba(89, 92, 173, 1) 100%);
+	border-radius: 100px;
+	font-size: 1.5em;
+	padding: .5em;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+}

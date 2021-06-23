@@ -1,0 +1,40 @@
+body {
+    background-color: #0d6efd;
+    line-height: 1!important;
+}
+
+.blog {
+    padding: 1em;
+    height: 88vh;
+    background-color: rgba(51,133,217,255);
+    color: white;
+    overflow-y: scroll;
+}
+
+.page-title {
+    background-color: rgba(51,133,217,255);
+    font-size: 3rem;
+}
+
+.article {
+    margin: 1em;
+    padding: 0.6em;
+    border: 1px solid white;
+    border-radius: 0.6em;
+}
+
+owner,
+time {
+    font-size: small;
+}
+
+.comments {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.italic {
+    font-size: small;
+    font-style: italic;
+}

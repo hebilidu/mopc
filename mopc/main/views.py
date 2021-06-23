@@ -7,7 +7,7 @@ from django.contrib.auth.views import LoginView
 # Create your views here.
 
 class MainLogin(LoginView):
-    template_name = 'mainloginview.html'
+    template_name = 'main/mainloginview.html'
 
 def main(request):
     return render(request, 'main/main.html')
