@@ -35,13 +35,14 @@ On top of this general definition, note that clouds may be owned by corporations
 - [x] Set up notes app - Day54 [DONE Day57]
 - [x] Set up blog app - Day54
 - [x] Set up photo album app - Day 53
+- [x] Set up PROTOTYPE calendar app - Day59
 - [ ] Set up file storage and sharing service - Day55
 - [ ] Set up genealogy app
 - [ ] Set up news aggregator app
 - [x] Set up professional section (CV, portfolio) - Day56-57
 - [ ] Set up game section (asteroids interactive game) - Day58-59
 - [x] Set up server (owned or virtual) - Day58-59 [DONE Day55]
-- [ ] Create a new Git branch to implement multi-tenancy [DONE Day58 / REVERTED Day59]
+- [x] Create a new Git branch to implement multi-tenancy [DONE Day58 / REVERTED Day59]
 
 ## Modules, packages and other resources used in this project
 * Login with social network id: https://python-social-auth.readthedocs.io/en/latest/index.html
@@ -50,7 +51,9 @@ On top of this general definition, note that clouds may be owned by corporations
 * bootstrap5
 * https://fontawesome.com/
 * Photo gallery: https://github.com/richardbarran/django-photologue
+* Blog and Notes are home-made (with the below addition, though)
 * Notes Taking: https://github.com/django-ckeditor/django-ckeditor
+* Calendar: use of Wagtail and Joyous
 
 ## Information about the server set-up
 I am using a Raspberry Pi 3 configured as an Ubuntu (linux) server with a LAMP environment (Linux-Apache-PostgreSQL-Python).
