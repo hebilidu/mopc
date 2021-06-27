@@ -15,6 +15,9 @@ class CategoryListView(generic.ListView):
     template_name = 'blog/categories.html'
     context_object_name = 'categories'
 
+    def get_queryset(self):
+        return Category.objects.order_by('label')
+
 
 class CategoryDetailView(generic.DetailView):
     model = Category
@@ -43,6 +46,9 @@ class PostListView(generic.ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'posts'
+
+    def get_queryset(self):
+        return Post.objects.order_by('-date_modified')
 
     
 class PostDetailView(generic.DetailView):

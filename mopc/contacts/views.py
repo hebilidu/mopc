@@ -4,12 +4,12 @@ from .models import Contact
 
 # Create your views here.
 def index(request):
-    contacts = Contact.objects.all()
+    contacts = Contact.objects.all().order_by('full_name')
     search_input = request.GET.get('search-area')
     if search_input:
         contacts = Contact.objects.filter(full_name__icontains=search_input)
     else:
-        contacts = Contact.objects.all()
+        contacts = Contact.objects.all().order_by('full_name')
         search_input = ''
     return render(request, 'contacts/index.html', { 'contacts': contacts, 'search_input': search_input })
 
