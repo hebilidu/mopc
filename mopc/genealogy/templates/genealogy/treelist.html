@@ -1,0 +1,21 @@
+{%   extends 'partials/genealogy.html' %}
+
+{% block title %}
+{{ action }}
+{% endblock %}
+
+{% block content %}
+{% if action == 'List trees' %}
+    <div class="page-title">{{ action }}</div>
+    <div class="main-genealogy">
+        {% for tree in trees %}
+            <a href="{% url 'treedetail' tree.id %}">
+                <button class="btn btn-info">{{ tree }}</button>
+            </a>
+        {% empty %}
+            <br>
+            <p>No trees found..</p>
+        {% endfor %}
+    </div>
+{% endif %}
+{% endblock %}
