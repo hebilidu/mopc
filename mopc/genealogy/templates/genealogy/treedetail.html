@@ -1,0 +1,40 @@
+{%   extends 'partials/genealogy.html' %}
+{% load bootstrap %}
+
+{% block title %}
+{{ action }}
+{% endblock %}
+
+{% block content %}
+{% if action == 'Create tree' %}
+    <div class="page-title">{{ action }}</div>
+    <form method="POST" class="main-genealogy" enctype="multipart/form-data">
+        {% csrf_token %}            
+        {{ form | bootstrap }}
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% elif action == 'View tree' %}
+    <div class="page-title">{{ action }}</div>
+    <div class="main-genealogy">
+        <p>Name:  {{ tree.name }}</p>
+        <p>Owner: {{ tree.owner }}</p>
+        <p>Depth: {{ tree.depth }}</p>
+        <br>
+        <a href="{% url 'treelist' %}">
+            <button class="btn btn-info">Back</button>
+        </a>
+        <a href="{% url 'treeedit' tree.id %}">
+            <button class="btn btn-success">Edit</button>
+        </a>
+    </div>
+{% elif action == 'Edit tree' %}
+    <div class="page-title">{{ action }}</div>
+    <form method="POST" class="main-genealogy" enctype="multipart/form-data">
+        {% csrf_token %}            
+        {{ form | bootstrap }}
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endif %}
+{% endblock %}
