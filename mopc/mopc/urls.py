@@ -15,6 +15,7 @@ urlpatterns = [
     path('photologue/', include('photologue.urls', namespace='photologue')),
     path('blog/', include('blog.urls')),
     path('notes/', include('notes.urls')),
+    path('genealogy/', include('genealogy.urls')),
     path('cms/', include(wagtailadmin_urls)),
     path('documents/', include(wagtaildocs_urls)),
     path('pages/', include(wagtail_urls)),

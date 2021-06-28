@@ -121,6 +121,8 @@ input {
     border-radius: 1em;
     margin-left: .4em;
     margin-right: .4em;
+    text-align: center;
+    padding-top: 3px;
 }
 
 .pro {
@@ -176,4 +178,15 @@ input {
 .p-style{
     font-size: xx-small;
     color:black;
+}
+
+#cont-popup{
+    height: 55%;
+    width: 75%;
+    background-color: #0d6efd;
+    border-radius: 1em;
+    border: solid 5px cornsilk;
+    opacity: .9;
+    padding: 1em;
+    display: none;
 }
