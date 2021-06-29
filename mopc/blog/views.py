@@ -56,6 +56,11 @@ class PostDetailView(generic.DetailView):
     template_name = 'blog/detail.html'
     context_object_name = 'post'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['action'] = 'View post'
+        return context
+
 
 class PostCreateView(LoginRequiredMixin, generic.CreateView):
     model = Post
@@ -74,6 +79,25 @@ class PostCreateView(LoginRequiredMixin, generic.CreateView):
         post.owner = self.request.user
         post.save()
         return super().form_valid(form)
+
+
+class PostUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Post
+    fields = [
+        'category', 
+        'title', 
+        'intro', 
+        'content',
+        'picture'
+    ]
+    template_name = 'blog/detail.html'
+    success_url = reverse_lazy('blog')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['post'] = get_object_or_404(Post, slug = self.kwargs.get("slug"))
+        context['action'] = 'Update post'
+        return context
 
 
 class CommentCreateView(LoginRequiredMixin, generic.CreateView):

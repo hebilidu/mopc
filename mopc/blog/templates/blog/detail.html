@@ -2,28 +2,51 @@
 {% load bootstrap %}
 
 {% block title %}
-Post detail
+{{ action }}
 {% endblock %}
 
 {% block content  %}
 
 <div class="page-title">{{ post.title }}</div>
-
-<div class="article">
-    <owner>{{ post.owner }} | </owner>
-    <time>{{ post.date_created }}</time>
-    {% for c in post.category.all %}
-        <a href = "{% url 'category' c.slug %}">
-            <button type="button" class="btn btn-info btn-sm">{{ c.label }}</button>
+{% if action == "View post" %}
+    <div class="article">
+        <owner>{{ post.owner }} | </owner>
+        <time>{{ post.date_created }}</time>
+        {% for c in post.category.all %}
+            <a href = "{% url 'category' c.slug %}">
+                <button type="button" class="btn btn-info btn-sm">{{ c.label }}</button>
+            </a>
+        {%  endfor %}
+        <p><strong>{{ post.intro }}</strong></p>
+        <hr>
+        {% autoescape off %}
+        <p>{{ post.content }}</p>
+        {% endautoescape %}
+    </div>
+    <a href="{% url 'blog' %}">
+        <button type="button" class="btn btn-primary btn-sm">Back to list</button>
+    </a>
+    {% if post.owner == user %}
+        <a href="{% url 'editpost' post.slug %}">
+            <button type="button" class="btn btn-success btn-sm">Edit</button>
         </a>
-    {%  endfor %}
-    <p><strong>{{ post.intro }}</strong></p>
-    <hr>
-    <p>{{ post.content }}</p>
-</div>
-<a href="{% url 'blog' %}">
-    <button type="button" class="btn btn-primary btn-sm">Back to list</button>
-</a>
+    {% endif %}
+{% endif %}
+{% if action == "Update post" %}
+    <div class="article">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.media }}          
+            {{ form | bootstrap }}
+            <br>
+            <a href="{% url 'detail' post.slug %}">
+                <button type="button" class="btn btn-danger btn-sm">Cancel</button>
+            </a>
+            <button type="submit" class="btn btn-success btn-sm">Save</button>
+        </form>
+    </div>
+{% endif %}
+
 <div class="comments">
 
     <h4>Comments</h4>

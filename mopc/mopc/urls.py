@@ -12,6 +12,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('social_django.urls', namespace='social')),
     path('contacts/', include('contacts.urls')),
+    path('photo/', include('photo.urls')),
     path('photologue/', include('photologue.urls', namespace='photologue')),
     path('blog/', include('blog.urls')),
     path('notes/', include('notes.urls')),

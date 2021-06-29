@@ -1,0 +1,19 @@
+{% extends "partials/photologue.html" %}
+{% load bootstrap %}
+
+{% block title %}
+{{ action }}
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ action }}</h1>
+
+<form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}            
+    {{ form | bootstrap }}
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

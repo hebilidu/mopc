@@ -1,0 +1,40 @@
+{% extends "partials/photologue.html" %}
+{% load bootstrap %}
+
+{% block title %}
+Gallery detail
+{% endblock %}
+
+{% block content %}
+
+{% if action == 'View category' %}
+    <h1>Detail for {{ gallery.title }}</h1>
+
+    <p class="muted"><small>Published: {{ gallery.date_added }}</small></p>
+
+    {% if gallery.description %}{{ gallery.description|safe }}{% endif %}
+
+    <div>
+        {% for photo in gallery.public %}
+            <a href="{{ photo.get_absolute_url }}">
+                <img src="{{ photo.get_thumbnail_url }}" class="thumbnail" alt="{{ photo.title }}">
+            </a>
+        {% empty %}
+            <h6>No pictures found in this gallery..</h6>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if action == 'Edit category' %}
+    <h1>Edit  gallery</h1>
+
+    <form method="POST" action="" enctype="multipart/form-data">
+        {% csrf_token %}            
+        {{ form | bootstrap }}
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{%   extends 'partials/base.html' %}
+
+{% block title %}
+About My Own Private Cloud
+{% endblock %}
+
+{% block css %}
+<style type="text/css">
+h1,h5,strong{
+    background-color: transparent;
+    color: rgb(105, 29, 138);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h5{
+    padding: 2em;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="main-logo">
+    <h1>Thank you for visiting this web site.</h1>
+    <h5>
+        This site is the final project of the Full-Stack Developer training I attended in the 2nd quarter of 2021. While I do have a significant programming experience from the past, I had not been coding professionally for years. Then I decided it was time to really get current with the languages, tools and frameworks in use today.
+    </h5>
+    <h5>
+        I took the opportunity of this project to develop something that will be immediately useful to me and that I have been missing so far. Essentially, I wish to regain control over my digital self and stop letting my personal data be stored I do know where and be exploited I do not know how by I do not know who. So, <strong>My Own Private Cloud</strong> is my first serious effort to act upon this aspiration.
+    </h5>
+    <h5>
+        This project is using most of the topics covered during the training: HTML, CSS (incl. Flexbox, Grid, Bootstrap), Javascript, Python, SQL, Django, GitHub. Plus some more: Flask, Heroku, Linux, Apache. To be in control of one's data, it is little surprising that one needs a fairly good vertical understanding of all the layers involved. But no matter how complex, I aim at packaging an actionable solution that not only I but also other motivated people can actually use on a daily basis. 
+    </h5>
+
+    <a href="/"><button class="btn btn-success">Back to the site home page</button></a>
+</div>
+
+{% endblock %}

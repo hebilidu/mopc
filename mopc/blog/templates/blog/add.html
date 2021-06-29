@@ -9,8 +9,9 @@ Add post
 
 <div class="page-title">Add a post</div>
 
-<form method="POST" class="containerf col-6" enctype="multipart/form-data">
-    {% csrf_token %}            
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.media }}          
     {{ form|bootstrap }}
     <br>
     <button type="submit" class="btn btn-primary">Submit</button>

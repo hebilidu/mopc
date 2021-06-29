@@ -12,6 +12,9 @@ class MainLogin(LoginView):
 def main(request):
     return render(request, 'main/main.html')
 
+def about(request):
+    return render(request, 'main/about.html')
+
 def signup(request):
     if request.user.is_authenticated:
         messages.error(request, 'You are already signed up and logged in!!')
