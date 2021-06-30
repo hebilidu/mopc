@@ -22,6 +22,8 @@ On top of this general definition, note that clouds may be owned by corporations
 ![Blog](/mopc/main/static/img/Screenshot_blog_detail.png "Blog")
     * Notes taking:
 ![Notes](/mopc/main/static/img/Screenshot_notes.png "Notes")
+    * Calendar
+![Calendar](/mopc/main/static/img/Screenshot_calendar.png "Calendar")
 
 ## TASKS LIST
 - [x] Fill README.md page (project brief) - Day51
@@ -29,7 +31,6 @@ On top of this general definition, note that clouds may be owned by corporations
 - [x] Lists functionalities and applications to add to project - Day51
 - [x] Priorize above list, define scope to fit a two weeks window, plan - Day51
 - [x] Select technical platform(s) - Day51
-- [ ] Set up Django social authentication - Day52
 - [ ] Set up Django multi-tenancy - Day55
 - [x] Set up address book app - Day52
 - [x] Set up notes app - Day54 [DONE Day57]
@@ -38,7 +39,6 @@ On top of this general definition, note that clouds may be owned by corporations
 - [x] Set up PROTOTYPE calendar app - Day59
 - [ ] Set up file storage and sharing service - Day55
 - [ ] Set up genealogy app
-- [ ] Set up news aggregator app
 - [x] Set up professional section (CV, portfolio) - Day56-57
 - [ ] Set up game section (asteroids interactive game) - Day58-59
 - [x] Set up server (owned or virtual) - Day58-59 [DONE Day55]
@@ -56,16 +56,16 @@ On top of this general definition, note that clouds may be owned by corporations
 * Calendar: use of Wagtail and Joyous
 
 ## Information about the server set-up
-I am using a Raspberry Pi 3 configured as an Ubuntu (linux) server with a LAMP environment (Linux-Apache-PostgreSQL-Python).
+* I am using a Raspberry Pi 3 configured as an Ubuntu (linux) server with a LAMP environment (Linux-Apache-PostgreSQL-Python).
 While fully operational, it by no means a production environment. Here is what the beast looks like:
-![Raspberry Pi](/mopc/main/static/img/rsp01.jpg "Notes")
+![Raspberry Pi](/mopc/main/static/img/rsp01.jpg "rsp01")
 
-For my portfolio, I am using the GitHub page publishing feature.
+* For my portfolio, I am using the GitHub page publishing feature:
+![Portfolio](/mopc/main/static/img/Screenshot_portfolio.png "portfolio")
 
-For some Flask or Django smaller projects, I am using Heroku hosting.
+* For some Flask or Django smaller projects, I am using Heroku hosting.
 
 ## Subjects to further explore
-* Set up server to run interactive Python apps
 * Django social networks authentication (-> https://github.com/pennersr/django-allauth)
     * (see also: https://djangopackages.org/grids/g/facebook-authentication/)
 * Multi-tenancy in Django (-> https://github.com/django-tenants/django-tenants)
