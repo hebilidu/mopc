@@ -58,7 +58,7 @@ On top of this general definition, note that clouds may be owned by corporations
 ## Information about the server set-up
 * I am using a Raspberry Pi 3 configured as an Ubuntu (linux) server with a LAMP environment (Linux-Apache-PostgreSQL-Python).
 While fully operational, it by no means a production environment. Here is what the beast looks like:
-![Raspberry Pi](/mopc/main/static/img/rsp01.jpg "rsp01")
+![Raspberry Pi](/mopc/main/static/img/rsp01.png "rsp01")
 
 * For my portfolio, I am using the GitHub page publishing feature:
 ![Portfolio](/mopc/main/static/img/Screenshot_portfolio.png "portfolio")
