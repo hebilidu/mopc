@@ -10,7 +10,7 @@ from wagtail.documents import urls as wagtaildocs_urls
 urlpatterns = [
     path('', include('main.urls')),
     path('admin/', admin.site.urls),
-    path('', include('social_django.urls', namespace='social')),
+    # path('', include('social_django.urls', namespace='social')),
     path('contacts/', include('contacts.urls')),
     path('photo/', include('photo.urls')),
     path('photologue/', include('photologue.urls', namespace='photologue')),

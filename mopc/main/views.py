@@ -2,13 +2,15 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import CustomUserCreationForm
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.views import LoginView    
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.decorators import login_required  
 
 # Create your views here.
 
 class MainLogin(LoginView):
     template_name = 'main/mainloginview.html'
-
+    
+@login_required 
 def main(request):
     return render(request, 'main/main.html')
 
