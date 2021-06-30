@@ -70,3 +70,4 @@ While fully operational, it by no means a production environment. Here is what t
     * (see also: https://djangopackages.org/grids/g/facebook-authentication/)
 * Multi-tenancy in Django (-> https://github.com/django-tenants/django-tenants)
     * (see also: https://djangopackages.org/grids/g/multi-tenancy/)
+    * This is a crucial element I am toying with and that I will implement next. This feature allows to run on a unique set of resources (server, database) multiple occurrences of the site and keeping then perfectly compartmented. Each end-user gets his/her own environment within a dedicated sub-domain and a full administrator role, deciding who else has access to what.
