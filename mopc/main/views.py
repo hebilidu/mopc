@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import login_required
 class MainLogin(LoginView):
     template_name = 'main/mainloginview.html'
     
-@login_required 
+@login_required(login_url='login') 
 def main(request):
     return render(request, 'main/main.html')
 
