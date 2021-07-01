@@ -43,6 +43,9 @@ On top of this general definition, note that clouds may be owned by corporations
 - [ ] Set up game section (asteroids interactive game) - Day58-59
 - [x] Set up server (owned or virtual) - Day58-59 [DONE Day55]
 - [x] Create a new Git branch to implement multi-tenancy [DONE Day58 / REVERTED Day59]
+- [ ] Add contact form in "About" and "Portfolio"
+- [ ] Add honeypot (from Rony)
+- [ ] Improve ckeditor (from Shimon)
 
 ## Modules, packages and other resources used in this project
 * Login with social network id: https://python-social-auth.readthedocs.io/en/latest/index.html
